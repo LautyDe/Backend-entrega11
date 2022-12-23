@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Silla Gamer",
+        "price": 60000,
+        "thumbnail": "https://www.gamer24hs.com/IMGS/1648569542.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Joystick PS5",
+        "price": 25000,
+        "thumbnail": "https://images.fravega.com/f1000/a23c2e9cbe114eca833fc5f7288457fc.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Auriculares PS5",
+        "price": 42000,
+        "thumbnail": "https://arsonyb2c.vtexassets.com/arquivos/ids/348062/PS5_WHS_Pshot_A.jpg?v=637363806123470000"
+    },
+    {
+        "id": 4,
+        "title": "Parlantes",
+        "price": 48000,
+        "thumbnail": "https://tiendatecnet.com/wp-content/uploads/2022/05/parlantes-logitech-s150.jpg"
+    }
+]
