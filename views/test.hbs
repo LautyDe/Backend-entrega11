@@ -2,25 +2,21 @@
 <a href="/productos">Ir a ver los productos</a>
 
 <h2>Productos-test</h2>
-{{#if products.length}}
-    <table>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+    </tr>
+    {{#each products}}
         <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Imagen</th>
+            <td>{{title}}</td>
+            <td>{{price}}</td>
+            <td><img
+                    class="img"
+                    src={{thumbnail}}
+                    alt="imagen del producto"
+                /></td>
         </tr>
-        {{#each products}}
-            <tr>
-                <td>{{title}}</td>
-                <td>{{price}}</td>
-                <td><img
-                        class="img"
-                        src={{thumbnail}}
-                        alt="imagen del producto"
-                    /></td>
-            </tr>
-        {{/each}}
-    </table>
-{{else}}
-    <h3>No hay productos agregados!</h3>
-{{/if}}
+    {{/each}}
+</table>
