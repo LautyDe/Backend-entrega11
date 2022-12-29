@@ -4,16 +4,20 @@ const faker = require("faker");
 faker.locale = "es";
 
 router.get("/", (req, res) => {
-    const randomProduct = [];
+    const randomProducts = [];
     for (let index = 0; index < 5; index++) {
-        randomProduct.push({
-            id: index + 1,
+        randomProducts.push({
             title: faker.commerce.product(),
             price: faker.commerce.price(),
             thumbnail: faker.image.imageUrl(),
         });
+        console.log(randomProducts);
     }
-    res.json(randomProduct);
+    res.render("test", {
+        products: randomProducts,
+        style: "test.css",
+        title: "Productos-test",
+    });
 });
 
 module.exports = router;
